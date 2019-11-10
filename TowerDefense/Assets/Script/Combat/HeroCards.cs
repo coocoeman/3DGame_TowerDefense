@@ -34,4 +34,9 @@ public class HeroCards : MonoBehaviour
     {
         management.SetHero(HeroCardsTeam.HeroDesigns[5]);
     }
+
+    public void CardTow()
+    {
+        Debug.Log("拖動");
+    }
 }
