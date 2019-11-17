@@ -4,11 +4,13 @@
 /// </summary>
 public class GenerateHeroManagement : MonoBehaviour
 {
+    #region 變數
     public static GenerateHeroManagement instance;
 
-    /// <summary>
-    /// 
-    /// </summary>
+    public GameObject generateParticle;//英雄產生的特效
+    private HeroDesign heroDesign;//英雄的設計圖
+
+    #endregion
     private void Awake()
     {
         if (instance != null)
@@ -18,31 +20,29 @@ public class GenerateHeroManagement : MonoBehaviour
         instance = this;
     }
 
-    private HeroDesign heroDesign;//英雄的設計圖
-    public GameObject generateParticle;//英雄產生的特效
 
     /// <summary>
     /// 判斷是否有英雄要建立
     /// </summary>
     public bool SetJudge { get { return heroDesign != null; } }
     /// <summary>
-    /// 讓建立英雄位置知道是否足夠金錢建立英雄
+    /// 讓建立英雄位置知道是否足夠金錢可以建立英雄
     /// </summary>
     public bool MoneyJudge { get { return  Money.moneys>= heroDesign.cont; } }
 
     /// <summary>
     /// 等待要建立的英雄物件
     /// </summary>
-    /// <param 要建立的英雄="prefab"></param>
+    /// <param name="prefab">獲取要建立的英雄物件</param>
     public void SetHero(HeroDesign prefab)
     {
         heroDesign = prefab;
     }
 
     /// <summary>
-    /// 等待指定的英雄產生點來建立英雄並且使用特效
+    /// 建立英雄與特效 並減少金錢
     /// </summary>
-    /// <param 指定的英雄產生點="point"></param>
+    /// <param name="point">取得點集到的生成英雄定位點</param>
     public void SetEnemyPosition(HeroGenerationPoint point)
     {
         if (Money.moneys < heroDesign.cont)//判斷金額是否還足夠

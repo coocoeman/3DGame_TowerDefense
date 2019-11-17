@@ -203,12 +203,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1528336145}
-        m_MethodName: CallHeroCards2
-        m_Mode: 1
+        m_MethodName: CallHeroCards1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2868,12 +2868,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1528336145}
-        m_MethodName: CallHeroCards2
-        m_Mode: 1
+        m_MethodName: CallHeroCards1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5906,12 +5906,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1528336145}
-        m_MethodName: CallHeroCards2
-        m_Mode: 1
+        m_MethodName: CallHeroCards1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6200,11 +6200,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598a33ba4a931fb45a9712ce7edd4d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTransform: {fileID: 4962257154089520258, guid: 8589711071366bc43a2671f0d15af8c0,
-    type: 3}
+  enemyTransform:
+  - {fileID: 4962257154089520258, guid: 8589711071366bc43a2671f0d15af8c0, type: 3}
+  - {fileID: 4974263707317260, guid: f0612f9ade4945544b78e7b155ade161, type: 3}
   generateLocation: {fileID: 1625635352}
   waveInterval: 5
   enemyQuantity: 0
+  waveNumber: 20
+  timeInterva: 0.5
 --- !u!4 &1528336147
 Transform:
   m_ObjectHideFlags: 0
@@ -6318,12 +6321,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1528336145}
-        m_MethodName: CallHeroCards2
-        m_Mode: 1
+        m_MethodName: CallHeroCards1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6613,7 +6616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625635351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 2, z: -6}
+  m_LocalPosition: {x: 6, y: 1, z: -6}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7271,12 +7274,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1528336145}
-        m_MethodName: CallHeroCards2
-        m_Mode: 1
+        m_MethodName: CallHeroCards1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7506,13 +7509,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727465658}
-  m_LocalRotation: {x: 0.57886255, y: -0, z: -0, w: 0.81542516}
+  m_LocalRotation: {x: 0.6149735, y: 0, z: 0, w: 0.78854775}
   m_LocalPosition: {x: 20, y: 50, z: -45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 70.741005, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 75.9, y: 0, z: 0}
 --- !u!1 &1772054994
 GameObject:
   m_ObjectHideFlags: 0
@@ -8360,18 +8363,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2041272842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1528336145}
-        m_MethodName: CallHeroCards1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2041272842
@@ -8428,13 +8420,18 @@ MonoBehaviour:
   - eventID: 2
     callback:
       m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1528336145}
+          m_MethodName: CallHeroCards1
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   - eventID: 5
@@ -8443,10 +8440,10 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1528336145}
           m_MethodName: CardTow
-          m_Mode: 1
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 2041272840}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

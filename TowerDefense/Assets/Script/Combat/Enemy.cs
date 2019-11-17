@@ -2,7 +2,7 @@
 
 public class Enemy : MonoBehaviour
 {
-    #region
+    #region 變數
     [Header("敵人屬性")]
     [Tooltip("敵人移動速度")] public float speed = 10f;
     [Tooltip("敵人的生命值")] public int hp = 100;
@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public Vector3 correction;
     #endregion
 
+    #region 事件
     private void Start()
     {
         pointTarget = LocationPoint.points[0];//存取第一個點
@@ -24,7 +25,9 @@ public class Enemy : MonoBehaviour
         Mobile();//移動位置
         Direction();
     }
+    #endregion
 
+    #region 方法
     /// <summary>
     /// 往定位點移動
     /// </summary>
@@ -102,6 +105,6 @@ public class Enemy : MonoBehaviour
         Vector3 vector3 = Quaternion.Lerp(enemyDirection.rotation, quaternion, Time.deltaTime * 10).eulerAngles;
         enemyDirection.rotation = Quaternion.Euler(0f, vector3.y, 0f);
     }
-
+    #endregion
 }
 

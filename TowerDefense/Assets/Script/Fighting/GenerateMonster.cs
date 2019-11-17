@@ -1,51 +1,57 @@
 ﻿using System.Collections;
 using UnityEngine;
-/// <summary>
-/// 敵人產生、波次、數量
-/// </summary>
+//生成怪物
 public class GenerateMonster : MonoBehaviour
 {
     #region 
     [Header("產生敵人的設定")]
-    [Tooltip("敵人物件")] public Transform enemyTransform;
+    [Tooltip("敵人物件")] public Transform[] enemyTransform ;
     [Tooltip("敵人產生位置")] public Transform generateLocation;
 
-    [Tooltip("間格時間")] public float waveInterval = 5;
+    [Tooltip("間格時間")] public float waveInterval = 10;
     [Tooltip("敵人數量")] public int enemyQuantity = 0;
+    [Tooltip("波的數量")]public int waveNumber = 20;
+    [Tooltip("怪物之間生成的短暫間隔"),Range(0.1f,1)]public float timeInterva = 0.5f;
     private float reciprocalTime = 5f;//倒數的時間
 
     #endregion
-
+    #region 事件
     private void Update()
-
     {
         ReciprocalTime();
     }
+    #endregion
 
+    #region 事件
     /// <summary>
-    /// 倒數的時間為0產生敵人並重製時間
+    /// 時間倒數 並 生成 與達成通關條件
     /// </summary>
     private void ReciprocalTime()
     {
-        if (reciprocalTime<=0)
+        if (reciprocalTime<=0 && waveNumber>0)
         {
+            waveNumber--;
+            enemyQuantity = (int) Random.Range(0, 20);//亂數決定怪物數量
             StartCoroutine(EceryGenerateQuantity());//產生敵人
-            reciprocalTime = waveInterval;//重製時間
+            reciprocalTime = enemyQuantity* timeInterva + waveInterval;//重製時間
         }
         reciprocalTime -= Time.deltaTime;//時間倒數
+        if (waveNumber == 0)
+        {
+            //通關瞜~~~~
+        }
     }
 
     /// <summary>
-    /// 每波增加敵人數量，敵人之間的間隔設定
+    /// 敵人生成數量
     /// </summary>
     /// <returns></returns>
     IEnumerator EceryGenerateQuantity()
     {
-        enemyQuantity++;//每次加1個敵人
         for (int i = 0; i < enemyQuantity; i++)
         {
             EnemyGenerateLocation();//敵人生成
-            yield return new WaitForSeconds(0.5f);//間隔
+            yield return new WaitForSeconds(timeInterva);//間隔
         }
     }
 
@@ -55,6 +61,8 @@ public class GenerateMonster : MonoBehaviour
     private void EnemyGenerateLocation()
     {
         
-        Instantiate(enemyTransform,generateLocation.position , generateLocation.rotation);
+        Instantiate(enemyTransform[(int)Random.Range(0,2)],generateLocation.position , generateLocation.rotation);
     }
+
+    #endregion
 }

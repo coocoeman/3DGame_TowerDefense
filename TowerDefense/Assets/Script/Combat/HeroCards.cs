@@ -3,40 +3,28 @@
 public class HeroCards : MonoBehaviour
 {
     GenerateHeroManagement management;
-    
+    //public Transform tra;
 
     void Start()
     {
         management = GenerateHeroManagement.instance;
     }
 
-    public void CallHeroCards1()
+    public void CallHeroCards1(int i)
     {
-        management.SetHero(HeroCardsTeam.HeroDesigns[0]);
-    }
-    public void CallHeroCards2()
-    {
-        management.SetHero(HeroCardsTeam.HeroDesigns[1]);
-    }
-    public void CallHeroCards3()
-    {
-        management.SetHero(HeroCardsTeam.HeroDesigns[2]);
-    }
-    public void CallHeroCards4()
-    {
-        management.SetHero(HeroCardsTeam.HeroDesigns[3]);
-    }
-    public void CallHeroCards5()
-    {
-        management.SetHero(HeroCardsTeam.HeroDesigns[4]);
-    }
-    public void CallHeroCards6()
-    {
-        management.SetHero(HeroCardsTeam.HeroDesigns[5]);
+        management.SetHero(HeroCardsTeam.HeroDesigns[i]);
+        //Instantiate(HeroCardsTeam.HeroDesigns[0].prefab,tra);
     }
 
-    public void CardTow()
+    /// <summary>
+    /// 卡牌拖移
+    /// </summary>
+    public void CardTow(RectTransform rt)
     {
-        Debug.Log("拖動");
+        Vector3 mp = Input.mousePosition;
+        mp.y = 0;
+        Vector3 pos = Camera.main.WorldToScreenPoint(mp);
+        //tra.position = pos;
+
     }
 }
