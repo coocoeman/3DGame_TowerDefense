@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829ff7160a62b1642a25ee97caa99fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
   hp: 100
+  speed: 3
   money: 50
   deathParticle: {fileID: 593206175957647052, guid: fe49b77823ec0e5428e184d07ac7162a,
     type: 3}
