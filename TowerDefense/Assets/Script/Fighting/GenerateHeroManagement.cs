@@ -13,6 +13,7 @@ public class GenerateHeroManagement : MonoBehaviour
     public GameObject generateParticle;//英雄產生的特效
     private HeroDesign heroDesign;//英雄的設計圖
     private HeroGenerationPoint targetPoint;//產生點
+    private GameObject card;
     #endregion
     private void Awake()
     {
@@ -69,6 +70,17 @@ public class GenerateHeroManagement : MonoBehaviour
         GameObject 效果 = (GameObject)Instantiate(generateParticle, targetPoint.GeneratingTargetVector(), Quaternion.identity);
         Destroy(效果, 5f);
         //使用特效
+        Destroy(card);
         heroDesign = null; //只能建立一次
+
+    }
+
+    /// <summary>
+    /// 獲取卡片 成功建立英雄要將它刪除 失敗哲無視
+    /// </summary>
+    /// <param name="target"></param>
+    public void CardDestroy(GameObject target)
+    {
+        card = target;
     }
 }

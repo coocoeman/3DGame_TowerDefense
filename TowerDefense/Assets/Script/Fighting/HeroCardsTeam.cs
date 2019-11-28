@@ -15,6 +15,7 @@ public class HeroCardsTeam : MonoBehaviour
         Team();
     }
 
+
     private void Team()
     {
         for (int i = 0; i < hds.Length; i++)
@@ -26,7 +27,7 @@ public class HeroCardsTeam : MonoBehaviour
     public void SetCaedTeam(HeroDesign HD,int i)
     {
         HDS[i] = HD;
-        HDS[i].prefab = Resources.Load("Hero/"+HDS[i].name, typeof(object)) as GameObject;
+        HDS[i].prefab = Resources.Load("Prefab/Hero/"+HDS[i].name, typeof(object)) as GameObject;
     }
 
 }
