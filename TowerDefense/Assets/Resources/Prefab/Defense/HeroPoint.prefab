@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5810797786965262469}
   - component: {fileID: 5810797786965262468}
   - component: {fileID: 5810797786965262491}
-  - component: {fileID: 5810797786965262490}
+  - component: {fileID: 7251048957055938797}
   m_Layer: 0
   m_Name: HeroPoint
   m_TagString: Untagged
@@ -93,7 +93,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5810797786965262490
+--- !u!114 &7251048957055938797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,10 +102,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5810797786965262488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e96c38a642e00745a53c502ce129c2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4001c79d81b756d468d2f09fa0abde5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero: {fileID: 0}
-  colorTarget: {r: 0.3160377, g: 0.9397653, b: 1, a: 1}
-  colorNotMoney: {r: 1, g: 0.4009434, b: 0.4009434, a: 1}
-  adjustmentHero: {x: 0, y: 0, z: 0}
+  "\u9EDE\u4E0A\u82F1\u96C4": {fileID: 0}
+  "\u7B26\u5408\u689D\u4EF6": {r: 0, g: 1, b: 0.9335959, a: 1}
+  "\u4E0D\u7B26\u5408\u689D\u4EF6": {r: 1, g: 0.36320752, b: 0.38839862, a: 1}
+  "\u8ABF\u6574": {x: 0, y: 0, z: 0}

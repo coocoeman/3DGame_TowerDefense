@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4962257154089520258}
   - component: {fileID: 3144085897631938041}
   - component: {fileID: 9089592529369767689}
+  - component: {fileID: -5487613564980110123}
   m_Layer: 0
   m_Name: enemySkeleton
   m_TagString: enemy
@@ -40,7 +41,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26967026296645516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829ff7160a62b1642a25ee97caa99fcc, type: 3}
   m_Name: 
@@ -67,6 +68,26 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-5487613564980110123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26967026296645516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8678d6db10722046909afdecef6152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u5C6C\u6027":
+    "\u751F\u547D": 100
+    "\u901F\u5EA6": 3
+    "\u91D1\u9322": 1
+    "\u6B7B\u4EA1\u7279\u6548": {fileID: 593206175957647052, guid: fe49b77823ec0e5428e184d07ac7162a,
+      type: 3}
+    "\u8F49\u5411": {fileID: 7903625420208329593}
+  "\u50B7\u5BB3\u503C": 1
 --- !u!1 &7903625419035112581
 GameObject:
   m_ObjectHideFlags: 0
