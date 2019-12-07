@@ -10,8 +10,7 @@ public class 英雄生成點 : MonoBehaviour
     public Color 不符合條件;
 
     private Renderer rerer;
-    private Color myC;
-
+    private Color myC , myCr;
     public Vector3 調整;
 
     private void Start()
@@ -19,9 +18,25 @@ public class 英雄生成點 : MonoBehaviour
         rerer = GetComponent<Renderer>();
         myC = rerer.material.color;
     }
+    private void Update()
+    {
+        顯示();
+    }
+
+    private void 顯示()
+    {
+        rerer.material.color = Color.clear;
+        if (!英雄生成管理.統一.藍圖方法)
+            return;
+        if (點上英雄 != null)
+            return;
+        
+        rerer.material.color = myC;
+    }
 
     private void OnMouseEnter()
     {
+        myCr = myC;
         if (EventSystem.current.IsPointerOverGameObject())
             return;
         if (!英雄生成管理.統一.藍圖方法)
@@ -30,17 +45,17 @@ public class 英雄生成點 : MonoBehaviour
             return;
         if (英雄生成管理.統一.金額方法)
         {
-            rerer.material.color = 符合條件;
+            myC = 符合條件;
             英雄生成管理.統一.傳遞生成點方法(this);
         }
         else
         {
-            rerer.material.color = 不符合條件;
+            myC = 不符合條件;
         }
     }
     private void OnMouseExit()
     {
-        rerer.material.color = myC;
+        myC = myCr;
         英雄生成管理.統一.傳遞生成點方法(null);
     }
 

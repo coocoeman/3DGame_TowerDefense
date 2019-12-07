@@ -38,8 +38,11 @@ public class 英雄生成管理 : MonoBehaviour
 
     public void 建立英雄方法()
     {
-        if (生成點 ==null)
+        if (生成點 == null)
+        {
+            藍圖 = null;
             return;
+        }
         if (介面命令.介面管理.能量.總值 < 藍圖.金額)
         {
             Debug.Log("金額不足");

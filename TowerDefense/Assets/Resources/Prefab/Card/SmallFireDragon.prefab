@@ -143,7 +143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4345521092606880515}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -178,6 +178,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4030156536109772260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2197662839084553234, guid: 6adc484a3ff904644a9e5d348cc40cc9,
+          type: 3}
+        m_MethodName: "\u50B3\u905E\u5361\u724C\u5C6C\u6027"
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7279323436121121845}
+          m_ObjectArgumentAssemblyTypeName: "\u5361\u724C\u5C6C\u6027, Assembly-CSharp"
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null

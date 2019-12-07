@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3755847305660945643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3647238442684699415}
+  - component: {fileID: 1170864558348168084}
+  m_Layer: 0
+  m_Name: CrabKing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3647238442684699415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3755847305660945643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8402692311683087771}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170864558348168084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3755847305660945643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521c07b4021c24b868f2ba2b3a3bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u85CD\u5716":
+    "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 0}
+    "\u540D\u5B50": CrabKing
+    "\u9396": 0
+    "\u91D1\u984D": 0
+    "\u7B49\u7D1A": 0
+    "\u653B\u64CA\u503C": 0
+    "\u5075\u6E2C\u7BC4\u570D": 0
+    "\u6CE2\u53CA\u7BC4\u570D": 0
+    "\u653B\u64CA\u901F\u5EA6": 0
+  "\u65CB\u8F49": {fileID: 3647238442684699415}
+  "\u653B\u64CA\u4F4D\u7F6E": {fileID: 822750467826260903}
+  "\u62DB\u5F0F": {fileID: 7213015357465107590, guid: a96af6877bfad3b4f9e736fdc34543f4,
+    type: 3}
+  "\u76EE\u6A19\u6A19\u7C64": enemy
+  "\u65CB\u8F49\u901F\u5EA6": 10
+--- !u!1001 &6478987327151558473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3647238442684699415}
+    m_Modifications:
+    - target: {fileID: 6897374621150730668, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_Name
+      value: CrabKing
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2135521431700851175, guid: b5486e2b0d5b83e4885e90ca4566d716, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: b5486e2b0d5b83e4885e90ca4566d716, type: 3}
+--- !u!4 &8402692311683087771 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3275700804621103826, guid: b5486e2b0d5b83e4885e90ca4566d716,
+    type: 3}
+  m_PrefabInstance: {fileID: 6478987327151558473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &822750467826260903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5945599873267160302, guid: b5486e2b0d5b83e4885e90ca4566d716,
+    type: 3}
+  m_PrefabInstance: {fileID: 6478987327151558473}
+  m_PrefabAsset: {fileID: 0}

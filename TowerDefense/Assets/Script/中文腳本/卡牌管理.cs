@@ -2,24 +2,19 @@
 
 public class 卡牌管理 : MonoBehaviour
 {
-    //public static 卡牌管理 總管;
     public 英雄藍圖[] 全圖鑑;
     public static 英雄藍圖[] 解鎖圖鑑;
-
-    /*private void Awake()
-    {
-        if (總管 != null)
-        {
-            return;
-        }
-        總管 = this;
-    }*/
+    public 英雄藍圖[] 顯示圖鑑;
 
     private void Start()
     {
-        更新圖鑑方法();
+        InvokeRepeating("更新圖鑑方法", 0f, 0.5f);
     }
 
+    private void Update()
+    {
+        顯示圖鑑 = 解鎖圖鑑;
+    }
     public void 更新圖鑑方法()
     {
         int a = 0;
@@ -31,14 +26,14 @@ public class 卡牌管理 : MonoBehaviour
             }
         }
         解鎖圖鑑 = new 英雄藍圖[a];
-        for (int i = 0; i < a; i++)
+        for (int i = 0; i < a;)
         {
-            for (int j = 0; j < a;)
+            for (int j = 0; j < 全圖鑑.Length;j++)
             {
-                if (全圖鑑[i].鎖)
+                if (全圖鑑[j].鎖)
                 {
-                    解鎖圖鑑[j] = 全圖鑑[i];
-                    j++;
+                    解鎖圖鑑[i] = 全圖鑑[j];
+                    i++;
                 }
             }
         }

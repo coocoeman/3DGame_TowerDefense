@@ -8,6 +8,7 @@ public class 關卡命令 : MonoBehaviour
 
     private void Start()
     {
+        遊戲音樂 = GetComponent<AudioSource>();
         遊戲音樂.clip = 關卡背景音樂;
         遊戲音樂.Play();
     }

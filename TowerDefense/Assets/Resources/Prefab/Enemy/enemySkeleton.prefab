@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4962257154089520258}
-  - component: {fileID: 3144085897631938041}
   - component: {fileID: 9089592529369767689}
   - component: {fileID: -5487613564980110123}
   m_Layer: 0
@@ -34,26 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3144085897631938041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26967026296645516}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829ff7160a62b1642a25ee97caa99fcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 100
-  speed: 3
-  money: 50
-  damaeValue: 1
-  deathParticle: {fileID: 593206175957647052, guid: fe49b77823ec0e5428e184d07ac7162a,
-    type: 3}
-  enemyDirection: {fileID: 7903625420208329593}
-  correction: {x: 0, y: -2, z: 0}
 --- !u!136 &9089592529369767689
 CapsuleCollider:
   m_ObjectHideFlags: 0

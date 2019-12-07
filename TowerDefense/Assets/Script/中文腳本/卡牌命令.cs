@@ -2,6 +2,7 @@
 
 public class 卡牌命令 : MonoBehaviour
 {
+    public Material 地板;
     public GameObject 發牌位置;
     private GameObject 拖曳英雄;
     private GameObject 牌;
@@ -16,7 +17,7 @@ public class 卡牌命令 : MonoBehaviour
             {
                 藍圖 = new 英雄藍圖[卡牌管理.解鎖圖鑑.Length];
                 藍圖 = 卡牌管理.解鎖圖鑑;
-                string name = 藍圖[0].名子;
+                string name = 藍圖[(int)Random.Range(0,藍圖.Length)].名子;
                 Instantiate(Resources.Load("Prefab/Card/" + name, typeof(object)) as GameObject, 發牌位置.transform.GetChild(i).transform);
             }
         }

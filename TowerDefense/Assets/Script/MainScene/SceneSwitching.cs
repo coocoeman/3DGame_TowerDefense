@@ -1,9 +1,11 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class SceneSwitching : MonoBehaviour
 {
+    public Image 跑條;
     /// <summary>
     /// 立刻切換場景
     /// </summary>
@@ -29,6 +31,7 @@ public class SceneSwitching : MonoBehaviour
 
         while (ao.isDone ==false)
         {
+            跑條.fillAmount = ao.progress/0.9f;
             yield return null;
             if (ao.progress == 0.9f && Input.anyKey)
             {
