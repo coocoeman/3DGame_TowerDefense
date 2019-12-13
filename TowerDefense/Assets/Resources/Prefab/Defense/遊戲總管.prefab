@@ -1,150 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3840329002223724588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3755192341047262766}
-  - component: {fileID: 2447577992572382916}
-  m_Layer: 0
-  m_Name: GameCard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3755192341047262766
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3840329002223724588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4133355199433773220}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2447577992572382916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3840329002223724588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff45c5e711b2b7347b94a95e8a53788a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "\u5168\u5716\u9451":
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 1
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 3755847305660945643, guid: 3688141812deb1246a829941f36fbdb3,
-      type: 3}
-    "\u540D\u5B50": CrabKing
-    "\u9396": 1
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 0
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
-      type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
-    "\u91D1\u984D": 1
-    "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
-    "\u653B\u64CA\u901F\u5EA6": 1
-  "\u986F\u793A\u5716\u9451": []
 --- !u!1 &4133355199433773218
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4133355199433773220}
+  - component: {fileID: 7647161347378302800}
   - component: {fileID: 4133355199433773221}
   - component: {fileID: 7635176425866971140}
+  - component: {fileID: 862488874385592693}
   m_Layer: 0
   m_Name: "\u904A\u6232\u7E3D\u7BA1"
   m_TagString: Untagged
@@ -173,11 +30,106 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3755192341047262766}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7647161347378302800
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133355199433773218}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 56f7064b2d3fa2744b99ba7ff73f1d58, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &4133355199433773221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +154,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 359f502f99ebe6b4095c915a634b8267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &862488874385592693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133355199433773218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff45c5e711b2b7347b94a95e8a53788a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u5168\u5716\u9451":
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 1
+    "\u91D1\u984D": 3
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 10
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 50
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 3755847305660945643, guid: 3688141812deb1246a829941f36fbdb3,
+      type: 3}
+    "\u540D\u5B50": CrabKing
+    "\u9396": 1
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 20
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 0
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 30
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+      type: 3}
+    "\u540D\u5B50": SmallFireDragon
+    "\u9396": 0
+    "\u91D1\u984D": 1
+    "\u7B49\u7D1A": 1
+    "\u653B\u64CA\u503C": 100
+    "\u5075\u6E2C\u7BC4\u570D": 10
+    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u901F\u5EA6": 1
+    HP: 0
+  "\u986F\u793A\u5716\u9451": []

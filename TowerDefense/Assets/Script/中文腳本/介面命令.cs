@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class 介面
 {
-    public int 總值, totalValue;
-    public int 初始值, initialValue;
+    public float 總值;
+    public float 初始值;
     public Text text;
     public Image image;
 }
@@ -26,20 +26,62 @@ public class 介面命令 : MonoBehaviour
     public 介面 血量;
     public 介面 能量;
 
+    private SceneSwitching _SS;
+    
+
     private bool 存活開關 = true;
-    public GameObject 結束畫面;
+    public GameObject 結束畫面,能量條,通關畫面;
 
     private void Start()
     {
+        _SS = GameObject.Find("關卡管理").GetComponent<SceneSwitching>();
         血量.總值 = 血量.初始值;
         能量.總值 = 能量.初始值;
+
     }
 
     private void Update()
     {
-        血量.text.text = 血量.總值.ToString();
-        能量.text.text = 能量.總值.ToString();
+        血量方法();
+        能量方法();
         存活方法();
+    }
+
+    private void 血量方法()
+    {
+        血量.text.text ="HP:" + 血量.總值.ToString();
+        血量.image.fillAmount =血量.總值 /血量.初始值;
+    }
+
+    private void 能量方法()
+    {
+        if (能量.總值>=5)
+        {
+            能量.總值 = 5;
+        }
+        else
+        {
+            能量.總值 += 0.1f * Time.deltaTime;
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            if (能量.總值 == 0)
+            {
+                能量條.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().color = new Color(1,1,1,0);
+            }
+            if ((int)能量.總值>i)
+            {
+                能量條.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().color = new Color(1,1,1,1f);
+            }
+            else
+            {
+                能量條.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().color = new Color(1,1,1,0);
+            }
+            if (能量.總值>i&& 能量.總值<i+1)
+            {
+                能量條.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 能量.總值-i);
+            }
+        }
     }
 
     private void 存活方法()
@@ -71,13 +113,22 @@ public class 介面命令 : MonoBehaviour
     public void 重製方法(GameObject 畫面)
     {
         開關畫面方法(畫面);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        _SS.RetrySwitch();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void 選單方法(GameObject 畫面)
     {
         開關畫面方法(畫面);
-        SceneManager.LoadScene("主畫面");
+        _SS.WaitSwitch("主畫面");
+        //SceneManager.LoadScene("主畫面");
+    }
+
+    public void 通關方法()
+    {
+        Time.timeScale = 0f;
+        通關畫面.SetActive(true);
+
     }
 }
 

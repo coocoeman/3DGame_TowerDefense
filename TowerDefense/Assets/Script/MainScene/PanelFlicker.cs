@@ -3,7 +3,12 @@
 public class PanelFlicker : MonoBehaviour
 {
     public GameObject panel_1,panel_2,panel_3;
-    public AudioSource backMusic;
+    private AudioSource backMusic;
+
+    private void Start()
+    {
+        backMusic = GameObject.Find("遊戲總管").GetComponent<AudioSource>();
+    }
 
     public void Open1()
     {

@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 
 public class 英雄命令 : MonoBehaviour
 {
@@ -8,10 +10,10 @@ public class 英雄命令 : MonoBehaviour
     public GameObject 招式;
     public string 目標標籤 = "enemy";
     public float 旋轉速度 = 10;
-
+    private float _HP;
     private float 攻擊間格時間 = 0f;
     private Transform 攻擊目標;
-
+    public Image 血條;
 
     private void Start()
     {
@@ -23,17 +25,19 @@ public class 英雄命令 : MonoBehaviour
             }
         }
         InvokeRepeating("搜索目標方法", 0f, 0.5f);//每幾秒調用一次方法
-        
+        _HP = 藍圖.HP;
     }
 
     private void Update()
     {
+        
         if (攻擊目標 == null)
             return;
         面向攻擊目標方法();
         if (攻擊間格時間 <= 0)
         {
             攻擊目標方法();
+            血量方法();
         }
         攻擊間格時間 -= Time.deltaTime;
     }
@@ -87,5 +91,15 @@ public class 英雄命令 : MonoBehaviour
             _招式命令.給予招式方法(攻擊目標, 藍圖.攻擊值, 藍圖.波及範圍, 目標標籤);
         }
         攻擊間格時間 = 1f / 藍圖.攻擊速度;
+    }
+
+    private void 血量方法()
+    {
+        _HP--;
+        if (_HP <= 0)
+        {
+            Destroy(gameObject);
+        }
+        血條.fillAmount = _HP / 藍圖.HP;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class 怪物命令 : MonoBehaviour
 {
@@ -7,17 +8,21 @@ public class 怪物命令 : MonoBehaviour
     private Transform[] 目標點S;
     private Transform 前往目標;
     private int 目標數 = 0;
+    public Image 血條;
+    private float 初始血量;
 
     private void Start()
     {
         目標點S = 怪物生成管理.路線S[(int)Random.Range(0, 怪物生成管理.路線S.Length)].GetComponent<怪物移動目標點>().posints;
         前往目標 = 目標點S[0];
         transform.position = 目標點S[0].position;
+        初始血量 = 屬性.生命;
     }
 
     private void Update()
     {
         移動方法();
+        血條顯示();
     }
 
     #region 主動
@@ -69,6 +74,12 @@ public class 怪物命令 : MonoBehaviour
         Destroy(特效, 0.3f);
         Destroy(gameObject);
         //獲取資源
+        介面命令.介面管理.能量.總值 += 0.2f;
+    }
+
+    private void 血條顯示()
+    {
+        血條.fillAmount = 屬性.生命/初始血量;
     }
     #endregion
 }

@@ -8,6 +8,7 @@ public class 卡牌屬性 : MonoBehaviour
     private void Start()
     {
         取得藍圖初始值方法();
+        
         //取得升等資料方法
         //計算升等後數值方法
     }
@@ -24,5 +25,10 @@ public class 卡牌屬性 : MonoBehaviour
         }
     }
 
-    
+    public void 強化畫面方法()
+    {
+        GameObject 畫面 = GameObject.Find("選單管理").GetComponent<選單命令>().強化畫面;
+        畫面.SetActive(true);
+        畫面.GetComponent<強化命令>().藍圖 = 藍圖;
+    }
 }

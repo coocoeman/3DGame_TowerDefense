@@ -4,7 +4,7 @@
 public class 怪物藍圖 
 {
 
-    public int 生命;
+    public float 生命;
     public float 速度;
     public int 金錢;
     public GameObject 死亡特效;

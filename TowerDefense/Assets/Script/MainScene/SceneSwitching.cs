@@ -33,10 +33,15 @@ public class SceneSwitching : MonoBehaviour
         {
             跑條.fillAmount = ao.progress/0.9f;
             yield return null;
-            if (ao.progress == 0.9f && Input.anyKey)
+            if (ao.progress == 0.9f /*&& Input.anyKey*/)
             {
                 ao.allowSceneActivation = true;
             }
         }
+    }
+
+    public void RetrySwitch()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

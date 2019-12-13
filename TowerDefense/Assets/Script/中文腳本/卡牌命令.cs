@@ -1,15 +1,32 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 
 public class 卡牌命令 : MonoBehaviour
 {
-    public Material 地板;
+    
     public GameObject 發牌位置;
     private GameObject 拖曳英雄;
     private GameObject 牌;
 
     private 英雄藍圖[] 藍圖;
 
+    private void Start()
+    {
+        Invoke("建立卡牌方法", 0.1f);
+        
+    }
+
     public void 發牌方法()
+    {
+        if (介面命令.介面管理.能量.總值 >= 3)
+        {
+            介面命令.介面管理.能量.總值 -= 3;
+            建立卡牌方法();
+        }
+    }
+
+    private void 建立卡牌方法()
     {
         for (int i = 0; i < 5; i++)
         {
@@ -18,10 +35,13 @@ public class 卡牌命令 : MonoBehaviour
                 藍圖 = new 英雄藍圖[卡牌管理.解鎖圖鑑.Length];
                 藍圖 = 卡牌管理.解鎖圖鑑;
                 string name = 藍圖[(int)Random.Range(0,藍圖.Length)].名子;
-                Instantiate(Resources.Load("Prefab/Card/" + name, typeof(object)) as GameObject, 發牌位置.transform.GetChild(i).transform);
+                GameObject a =Instantiate(Resources.Load("Prefab/Card/" + name, typeof(object)) as GameObject, 發牌位置.transform.GetChild(i).transform);
+                a.transform.GetChild(0).GetComponent<Button>().enabled = false;
             }
         }
     }
+
+    
 
     public void 卡牌觸發方法(GameObject 牌按鈕)
     {

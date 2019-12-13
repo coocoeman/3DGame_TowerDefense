@@ -35,7 +35,7 @@ public class 怪物生成管理 : MonoBehaviour
         {
             if (存放物件.transform.childCount == 0)
             {
-                Debug.Log("通關條件");
+                介面命令.介面管理.通關方法();
             }
             return;
         }

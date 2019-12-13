@@ -1,29 +1,35 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class 強化命令 : MonoBehaviour
 {
-    public static 強化命令 統一;
-    private void Awake()
+    public 英雄藍圖 藍圖;
+    public GameObject 卡牌位置;
+    public Text 名子, 等級, 代價, 傷害, 偵測範圍, 波及範圍, 攻擊速度;
+    
+
+    public void 關閉強化畫面方法()
     {
-        if (統一 != null)
-        {
+        gameObject.SetActive(false);
+        藍圖 = null;
+    }
+
+    private void Start()
+    {
+        if (藍圖 == null)
             return;
-        }
-        統一 = this;
-    }
-    public GameObject 強化畫面;
-    private 卡牌屬性 屬性;
-
-    private void Update()
-    {
-        Debug.Log(屬性.名子);
-        強化畫面.SetActive(屬性方法);
+        顯示方法();
     }
 
-    public void 傳遞卡牌屬性(卡牌屬性 傳遞屬性)
+    private void 顯示方法()
     {
-        屬性 = 傳遞屬性;
-        Debug.Log("成功");
+        Instantiate(Resources.Load("Prefab/Card/" + 藍圖.名子, typeof(object)) as GameObject, 卡牌位置.transform);
+        名子.text = 藍圖.名子;
+        等級.text = "等級:" + 藍圖.等級;
+        代價.text = "代價:" + 藍圖.金額;
+        傷害.text = "傷害:" + 藍圖.攻擊值;
+        偵測範圍.text = "偵測範圍:" + 藍圖.偵測範圍;
+        波及範圍.text = "波及範圍:" + 藍圖.波及範圍;
+        攻擊速度.text = "攻擊速度:" + 藍圖.攻擊速度;
     }
-    public bool 屬性方法 { get { return 屬性 != null; } }
 }
