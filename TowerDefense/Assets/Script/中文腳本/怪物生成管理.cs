@@ -18,6 +18,7 @@ public class 怪物生成管理 : MonoBehaviour
     public float 倒數計時;
     #endregion
 
+
     private void Start()
     {
         路線S = new Transform[路線.Length];

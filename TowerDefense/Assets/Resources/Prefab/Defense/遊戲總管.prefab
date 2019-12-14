@@ -188,18 +188,18 @@ MonoBehaviour:
     "\u5075\u6E2C\u7BC4\u570D": 10
     "\u6CE2\u53CA\u7BC4\u570D": 0
     "\u653B\u64CA\u901F\u5EA6": 1
-    HP: 30
-  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
+    HP: 40
+  - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 6353409015224266280, guid: a364abdbdc623bc44b4cc21868d5be3c,
       type: 3}
-    "\u540D\u5B50": SmallFireDragon
-    "\u9396": 0
+    "\u540D\u5B50": WindElf
+    "\u9396": 1
     "\u91D1\u984D": 1
     "\u7B49\u7D1A": 1
-    "\u653B\u64CA\u503C": 100
-    "\u5075\u6E2C\u7BC4\u570D": 10
-    "\u6CE2\u53CA\u7BC4\u570D": 5
+    "\u653B\u64CA\u503C": 10
+    "\u5075\u6E2C\u7BC4\u570D": 15
+    "\u6CE2\u53CA\u7BC4\u570D": 3
     "\u653B\u64CA\u901F\u5EA6": 1
-    HP: 0
+    HP: 30
   - "\u82F1\u96C4\u9810\u88FD\u4EF6": {fileID: 8894912001424336159, guid: f95b3de148ee7d44c9b3c18cb609306a,
       type: 3}
     "\u540D\u5B50": SmallFireDragon

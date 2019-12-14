@@ -18,6 +18,7 @@ public class 英雄生成點 : MonoBehaviour
         rerer = GetComponent<Renderer>();
         myC = rerer.material.color;
     }
+
     private void Update()
     {
         顯示();

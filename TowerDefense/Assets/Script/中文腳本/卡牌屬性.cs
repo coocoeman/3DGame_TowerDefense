@@ -18,6 +18,7 @@ public class 卡牌屬性 : MonoBehaviour
         英雄藍圖[] 藍圖S = 卡牌管理.解鎖圖鑑;
         for (int i = 0; i < 藍圖S.Length; i++)
         {
+
             if (名子 == 藍圖S[i].名子)
             {
                 藍圖 = 藍圖S[i];
@@ -30,5 +31,6 @@ public class 卡牌屬性 : MonoBehaviour
         GameObject 畫面 = GameObject.Find("選單管理").GetComponent<選單命令>().強化畫面;
         畫面.SetActive(true);
         畫面.GetComponent<強化命令>().藍圖 = 藍圖;
+        畫面.GetComponent<強化命令>().建立卡牌();
     }
 }

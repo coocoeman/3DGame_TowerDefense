@@ -18,6 +18,7 @@ public class 招式命令 : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         移動方法();
     }
 

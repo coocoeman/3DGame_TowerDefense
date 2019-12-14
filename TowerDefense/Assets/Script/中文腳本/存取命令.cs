@@ -12,6 +12,7 @@ public class 存取命令 : MonoBehaviour
         FileStream fs = new FileStream(Application.dataPath + "/Data.txt", FileMode.Create);
         fs.Close();
         讀檔();
+        InvokeRepeating("存檔", 1f, 60f);
     }
     void Update()
     {

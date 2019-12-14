@@ -15,6 +15,8 @@ public class 英雄命令 : MonoBehaviour
     private Transform 攻擊目標;
     public Image 血條;
 
+    private bool animBool = false;
+
     private void Start()
     {
         for (int i = 0; i < 卡牌管理.解鎖圖鑑.Length; i++)
@@ -26,6 +28,10 @@ public class 英雄命令 : MonoBehaviour
         }
         InvokeRepeating("搜索目標方法", 0f, 0.5f);//每幾秒調用一次方法
         _HP = 藍圖.HP;
+        if (transform.GetChild(0).GetComponent<精靈動畫命令>()!=null)
+        {
+            animBool = true;
+        }
     }
 
     private void Update()
@@ -89,8 +95,16 @@ public class 英雄命令 : MonoBehaviour
         if (_招式命令 != null)
         {
             _招式命令.給予招式方法(攻擊目標, 藍圖.攻擊值, 藍圖.波及範圍, 目標標籤);
+            if (animBool)
+            {
+                AnimBool();
+            }
         }
         攻擊間格時間 = 1f / 藍圖.攻擊速度;
+    }
+    private void AnimBool()
+    {
+        transform.GetChild(0).GetComponent<精靈動畫命令>().Attack();
     }
 
     private void 血量方法()

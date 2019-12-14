@@ -18,6 +18,7 @@ public class 關卡命令 : MonoBehaviour
     public void 介紹方法()
     {
         關卡資訊畫面.SetActive(true);
+
         Time.timeScale = 0f;
         
     }

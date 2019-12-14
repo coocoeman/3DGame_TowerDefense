@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - "\u6575\u4EBA"
   - enemy
   layers:
   - Default

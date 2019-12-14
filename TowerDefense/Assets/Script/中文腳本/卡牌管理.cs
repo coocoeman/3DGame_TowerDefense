@@ -18,6 +18,7 @@ public class 卡牌管理 : MonoBehaviour
     public void 更新圖鑑方法()
     {
         int a = 0;
+
         for (int i = 0; i < 全圖鑑.Length; i++)
         {
             if (全圖鑑[i].鎖)
